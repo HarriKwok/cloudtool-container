@@ -22,4 +22,11 @@ docker rm $(docker ps -a -q)
 
 ## Run Docker image
 
+### Work
+
 docker run -it --rm --name cloudtool --env AWS_PROFILE=Harri -v "$HOME/.aws":/root/.aws -v "$HOME/Workspace":/root/Workspace cloudtool zsh
+
+### Home
+
+docker run -it --rm --name cloudtool --env AWS_PROFILE=Harri -v "$HOME/.aws":/root/.aws -v "/d/Workspace":/root/Workspace cloudtool zsh
+
