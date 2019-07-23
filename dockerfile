@@ -1,6 +1,6 @@
 FROM alpine:3.7
 
-RUN apk add --no-cache nano bash python3 terraform openssh-keygen openssh-client git groff less make rsync zsh && \
+RUN apk add --no-cache jq nano bash python3 terraform openssh-keygen openssh-client git groff less make rsync zsh && \
     python3 -m ensurepip && \
     rm -r /usr/lib/python*/ensurepip && \
     pip3 install --upgrade pip setuptools && \
